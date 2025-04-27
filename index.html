@@ -1,220 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morse Translation Table</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Acme Web Deisgn | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Acme</span> Web Design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<h2>Raven John's Project Program Morse Translation Table Dictionary</h2>
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable Professional Web Design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+      </div>
+    </section>
 
-<table>
-    <tr>
-        <th>Character</th>
-        <th>Translation</th>
-    </tr>
-    <tr><td>a</td><td>+-----</td></tr>
-    <tr><td>b</td><td>++----</td></tr>
-    <tr><td>c</td><td>+++---</td></tr>
-    <tr><td>d</td><td>++++--</td></tr>
-    <tr><td>e</td><td>+++++-</td></tr>
-    <tr><td>f</td><td>++++++</td></tr>
-    <tr><td>g</td><td>-----+</td></tr>
-    <tr><td>h</td><td>----++</td></tr>
-    <tr><td>i</td><td>---+++</td></tr>
-    <tr><td>j</td><td>--++++</td></tr>
-    <tr><td>k</td><td>-+++++</td></tr>
-    <tr><td>l</td><td>------</td></tr>
-    <tr><td>m</td><td>^-----</td></tr>
-    <tr><td>n</td><td>^^----</td></tr>
-    <tr><td>o</td><td>^^^---</td></tr>
-    <tr><td>p</td><td>^^^^--</td></tr>
-    <tr><td>q</td><td>^^^^^-</td></tr>
-    <tr><td>r</td><td>^^^^^^</td></tr>
-    <tr><td>s</td><td>----+^</td></tr>
-    <tr><td>t</td><td>---+^^</td></tr>
-    <tr><td>u</td><td>--+^^^</td></tr>
-    <tr><td>v</td><td>-++^^^</td></tr>
-    <tr><td>w</td><td>+++^^^</td></tr>
-    <tr><td>x</td><td>++^+^^</td></tr>
-    <tr><td>y</td><td>+^^++^</td></tr>
-    <tr><td>z</td><td>^^^+++</td></tr>
-    <tr><td>A</td><td>-+^^+-</td></tr>
-    <tr><td>B</td><td>+^^^^+</td></tr>
-    <tr><td>C</td><td>/----\</td></tr>
-    <tr><td>D</td><td>/++++\</td></tr>
-    <tr><td>E</td><td>//--\\</td></tr>
-    <tr><td>F</td><td>///\\\</td></tr>
-    <tr><td>G</td><td>//++\\</td></tr>
-    <tr><td>H</td><td>/\\\\\</td></tr>
-    <tr><td>I</td><td>//\\\\</td></tr>
-    <tr><td>J</td><td>////\\</td></tr>
-    <tr><td>K</td><td>/////\</td></tr>
-    <tr><td>L</td><td>//////</td></tr>
-    <tr><td>M</td><td>////\\</td></tr>
-    <tr><td>N</td><td>\\\\\\</td></tr>
-    <tr><td>O</td><td>!-+-+!</td></tr>
-    <tr><td>P</td><td>!+-+-!</td></tr>
-    <tr><td>Q</td><td>+!!!!+</td></tr>
-    <tr><td>R</td><td>-!!!!-</td></tr>
-    <tr><td>S</td><td>?!??!?</td></tr>
-    <tr><td>T</td><td>!?????</td></tr>
-    <tr><td>U</td><td>!!????</td></tr>
-    <tr><td>V</td><td>!!!???</td></tr>
-    <tr><td>W</td><td>!!!!??</td></tr>
-    <tr><td>X</td><td>!!!!!?</td></tr>
-    <tr><td>Y</td><td>!!!!!!</td></tr>
-    <tr><td>Z</td><td>??????</td></tr>
-    <tr><td>1</td><td>?????!</td></tr>
-    <tr><td>2</td><td>????!!</td></tr>
-    <tr><td>3</td><td>???!!!</td></tr>
-    <tr><td>4</td><td>??!!!!</td></tr>
-    <tr><td>5</td><td>?!!!!!</td></tr>
-    <tr><td>6</td><td>/\/\/\</td></tr>
-    <tr><td>7</td><td>-\-\-\</td></tr>
-    <tr><td>8</td><td>\-\-\-</td></tr>
-    <tr><td>9</td><td>---+-+</td></tr>
-    <tr><td>0</td><td>+++-+-</td></tr>
-    <tr><td>/</td><td>+-+-+-</td></tr>
-    <tr><td>,</td><td>-+-+-+</td></tr>
-    <tr><td>[</td><td>+--+++</td></tr>
-    <tr><td>]</td><td>++-+--</td></tr>
-    <tr><td>}</td><td>+-++-+</td></tr>
-    <tr><td>{</td><td>/-+---</td></tr>
-    <tr><td>=</td><td>---+-\</td></tr>
-    <tr><td>≈</td><td>-+--++</td></tr>
-    <tr><td>≠</td><td>-++-++</td></tr>
-    <tr><td>∞</td><td>++-++-</td></tr>
-    <tr><td>)</td><td>/!\!/!</td></tr>
-    <tr><td>(</td><td>!\!/!\</td></tr>
-    <tr><td>×</td><td>?\?/?\</td></tr>
-    <tr><td>∆</td><td>/?\?/?</td></tr>
-    <tr><td>¶</td><td>??!??!</td></tr>
-    <tr><td>÷</td><td>?+-??+</td></tr>
-    <tr><td>μ</td><td>?+-!?-</td></tr>
-    <tr><td>Ω</td><td>+-?!-+</td></tr>
-    <tr><td>Π</td><td>+-+!??</td></tr>
-    <tr><td>√</td><td>+-!???</td></tr>
-    <tr><td>•</td><td>+!!???</td></tr>
-    <tr><td>♦</td><td>!+-?!?</td></tr>
-    <tr><td>♥</td><td>!?+--?</td></tr>
-    <tr><td>♪</td><td>+-/\?!</td></tr>
-    <tr><td>♠</td><td>?!\/?!</td></tr>
-    <tr><td>♣</td><td>!\+-/?</td></tr>
-    <tr><td>|</td><td>!?\//\</td></tr>
-    <tr><td>`</td><td>/\\//\</td></tr>
-    <tr><td>~</td><td>\//\\/</td></tr>
-    <tr><td>′</td><td>\/+!?\</td></tr>
-    <tr><td>″</td><td>+-!?/\</td></tr>
-    <tr><td>,</td><td>-\/-+?</td></tr>
-    <tr><td>.</td><td>+-!?\/</td></tr>
-    <tr><td>„</td><td>!?!!?/</td></tr>
-    <tr><td>“</td><td>+/-\!?</td></tr>
-    <tr><td>”</td><td>/\+-?!</td></tr>
-    <tr><td>’</td><td>/\+!?!</td></tr>
-    <tr><td>‘</td><td>/+-\!?</td></tr>
-    <tr><td>‹</td><td>---\/-</td></tr>
-    <tr><td>›</td><td>-/\---</td></tr>
-    <tr><td>></td><td>\/+-\/</td></tr>
-    <tr><td><</td><td>\//\/\</td></tr>
-    <tr><td>≥</td><td>/\/\\/</td></tr>
-    <tr><td>»</td><td>/+-!\?</td></tr>
-    <tr><td>«</td><td>/!?+-!</td></tr>
-    <tr><td>≤</td><td>\+!+!+</td></tr>
-    <tr><td>⟩</td><td>!!??++</td></tr>
-    <tr><td>⟨</td><td>++??!!</td></tr>
-    <tr><td>:</td><td>??!!++</td></tr>
-    <tr><td>;</td><td>++!!??</td></tr>
-    <tr><td>!</td><td>!!--++</td></tr>
-    <tr><td>?</td><td>--!!++</td></tr>
-    <tr><td>%</td><td>++!!--</td></tr>
-    <tr><td>℅</td><td>!++--!</td></tr>
-    <tr><td>‰</td><td>+!+-!-</td></tr>
-    <tr><td>Space[ ]</td><td>|</td></tr>
-    <tr><td>©</td><td>?!!??!</td></tr>
-    <tr><td>®</td><td>!??!!?</td></tr>
-    <tr><td>™</td><td>!?//?!</td></tr>
-    <tr><td>✓</td><td>!?//!?</td></tr>
-    <tr><td>→</td><td>/+\/+\</td></tr>
-    <tr><td>↓</td><td>/-\/-\</td></tr>
-    <tr><td>↑</td><td>\+/\+/</td></tr>
-    <tr><td>←</td><td>\-/\-/</td></tr>
-    <tr><td>¥</td><td>?+?!+!</td></tr>
-    <tr><td>€</td><td>!+!?+?</td></tr>
-    <tr><td>¢</td><td>?+?!-!</td></tr>
-    <tr><td>£</td><td>!+!?-?</td></tr>
-    <tr><td>$</td><td>?-?!+!</td></tr>
-    <tr><td>&</td><td>!-!?+?</td></tr>
-    <tr><td>_</td><td>?-!?+!</td></tr>
-    <tr><td>·</td><td>!-?!+?</td></tr>
-    <tr><td>–</td><td>?+!?-!</td></tr>
-    <tr><td>_</td><td>?\!!/?</td></tr>
-    <tr><td>-</td><td>!\??/!</td></tr>
-    <tr><td>—</td><td>?\!/?\</td></tr>
-    <tr><td>+</td><td>/?\!/?</td></tr>
-    <tr><td>₱</td><td>+/!!??</td></tr>
-    <tr><td>₹</td><td>//-\\+</td></tr>
-    <tr><td>№</td><td>/!-?+\</td></tr>
-    <tr><td>#</td><td>/!!?-\</td></tr>
-    <tr><td>@</td><td>!?!?\\</td></tr>
-    <tr><td>‡</td><td>/\!-+?</td></tr>
-    <tr><td>†</td><td>/??-+\</td></tr>
-    <tr><td>★</td><td>???\\\</td></tr>
-    <tr><td>*</td><td>\\\???</td></tr>
-    <tr><td>‽</td><td>!!!\\\</td></tr>
-    <tr><td>¿</td><td>??\!!!</td></tr>
-    <tr><td>¡</td><td>\\\!!!</td></tr>
-    <tr><td>⁰</td><td>!\??\!</td></tr>
-    <tr><td>ⁿ</td><td>!/??/!</td></tr>
-    <tr><td>∅</td><td>!++\??</td></tr>
-    <tr><td>⁹</td><td>+/-/!/</td></tr>
-    <tr><td>⁸</td><td>/?/+/-</td></tr>
-    <tr><td>⁷</td><td>/!/-/+</td></tr>
-    <tr><td>⅞</td><td>\\//+-</td></tr>
-    <tr><td>⁶</td><td>+!-??\</td></tr>
-    <tr><td>⁵</td><td>!+?-//</td></tr>
-    <tr><td>⅚</td><td>?+!-/\</td></tr>
-    <tr><td>⅝</td><td>!-?+\/</td></tr>
-    <tr><td>⁴</td><td>\/+?-!</td></tr>
-    <tr><td>⅘</td><td>/\!-?+</td></tr>
-    <tr><td>³</td><td>-!?+\/</td></tr>
-    <tr><td>¾</td><td>!+?/-\</td></tr>
-    <tr><td>⅗</td><td>+?-!\/</td></tr>
-    <tr><td>⅜</td><td>-!+?/\</td></tr>
-    <tr><td>²</td><td>\/-++-</td></tr>
-    <tr><td>⅔</td><td>-++-\/</td></tr>
-    <tr><td>⅖</td><td>/+!-\?</td></tr>
-    <tr><td>¹</td><td>/+!?-\</td></tr>
-    <tr><td>½</td><td>/+!-?\</td></tr>
-    <tr><td>⅓</td><td>/+-!?\</td></tr>
-    <tr><td>¼</td><td>/+-!?\</td></tr>
-    <tr><td>⅕</td><td>/-\+?!</td></tr>
-    <tr><td>⅙</td><td>\+/-?!</td></tr>
-    <tr><td>⅐</td><td>!?+-\/</td></tr>
-    <tr><td>⅛</td><td>\/+-!?</td></tr>
-    <tr><td>⅑</td><td>-+?!/\</td></tr>
-    <tr><td>⅒</td><td>/\?!-+</td></tr>
-    <tr><td>π</td><td>-++-?\</td></tr>
-    <tr><td>±</td><td>+--+?\</td></tr>
-    <tr><td>Word separator</td><td>></td></tr>
-</table>
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
 
-</body>
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./img/logo_html.png">
+          <h3>HTML5 Markup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_css.png">
+          <h3>CSS3 Styling</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_brush.png">
+          <h3>Graphic Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>RjProject, Acme Web Deisgn, Copyright &copy; 2024</p>
+    </footer>
+  </body>
 </html>
