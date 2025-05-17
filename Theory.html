@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Raven John B. Mabao - Theories & Mathematics</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; background: #f7f7f7; color: #222;
+  }
+  header {
+    background: #1f2937; color: #f9fafb; padding: 15px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  #searchBar {
+    width: 100%; padding: 12px; font-size: 1em; border: none; box-sizing: border-box;
+  }
+  .container {
+    max-width: 900px; margin: 20px auto; padding: 0 15px;
+  }
+  .theory-list {
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .theory-card {
+    background: white; padding: 15px 20px; border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .theory-card:hover {
+    background: #e2e8f0;
+  }
+  .theory-title {
+    font-weight: 700; font-size: 1.2em; margin-bottom: 6px;
+  }
+  .theory-short {
+    color: #475569;
+  }
+  #detailView {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: #ffffff;
+    overflow-y: auto;
+    padding: 30px 40px;
+    display: none;
+    box-sizing: border-box;
+  }
+  #detailView h2 {
+    margin-top: 0;
+  }
+  #closeBtn {
+    position: fixed; top: 20px; right: 30px; cursor: pointer;
+    background: #ef4444; color: white; border: none;
+    padding: 8px 12px; font-weight: bold; border-radius: 4px;
+  }
+  pre {
+    background: #f3f4f6;
+    border-left: 5px solid #2563eb;
+    padding: 15px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Consolas, monospace;
+  }
+  code {
+    font-family: Consolas, monospace;
+  }
+  .symbol {
+    font-size: 1.4em; font-weight: bold; color: #2563eb;
+    margin: 10px 0 5px 0;
+  }
+  a {
+    color: #2563eb; text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+<header>Raven John B. Mabao - Theories & Mathematical System</header>
+
+<div class="container">
+  <input type="text" id="searchBar" placeholder="Search theories, symbols, or keywords..." />
+
+  <div class="theory-list" id="theoryList">
+
+    <div class="theory-card" data-keywords="ultra instinct unconscious flow state dream muscle control spinal cord">
+      <div class="theory-title">Ultra Instinct Theory</div>
+      <div class="theory-short">Explains unconscious muscle control and dream-state body movement.</div>
+    </div>
+
+    <div class="theory-card" data-keywords="flow state ultra instinct conscious mind muscle memory brain blood spinal cord">
+      <div class="theory-title">Flow State vs Ultra Instinct</div>
+      <div class="theory-short">Difference between conscious flow and unconscious ultra instinct.</div>
+    </div>
+
+    <div class="theory-card" data-keywords="sleep walking ultra instinct unconscious movement tributes">
+      <div class="theory-title">Sleepwalking as Ultra Instinct</div>
+      <div class="theory-short">Sleepwalking explained as a form of unconscious ultra instinct movement.</div>
+    </div>
+
+    <div class="theory-card" data-keywords="mab symbol mx special constant number theory geometry exponential">
+      <div class="theory-title">Mab'z Number (m^x) & Symbol</div>
+      <div class="theory-short">The special constant m^x and its full decimal expansion and uses.</div>
+    </div>
+
+    <div class="theory-card" data-keywords="true mabz number tmn combinatorial hyper exponential large number theory mathematics">
+      <div class="theory-title">True Mab'z Number (TMN) & Advanced Theories</div>
+      <div class="theory-short">Complex mathematical constructs beyond Graham's number and TREE(3).</div>
+    </div>
+
+    <div class="theory-card" data-keywords="infinity theory mathematical concept abstract limit infinity">
+      <div class="theory-title">Infinity Theory</div>
+      <div class="theory-short">Explores infinity and boundlessness beyond conventional limits.</div>
+    </div>
+
+  </div>
+</div>
+
+<div id="detailView">
+  <button id="closeBtn">Close</button>
+  <div id="detailContent"></div>
+</div>
+
+<script>
+  const theories = {
+    "Ultra Instinct Theory": `
+<h2>Ultra Instinct Theory</h2>
+<p><strong>By:</strong> Raven John Becaro Mabao</p>
+<p><strong>Introduction:</strong></p>
+<p>Ultra Instinct (UI) is a unique unconscious state where the body moves independently through dreams, controlled by instinctual muscle memory rather than conscious thought. It involves the brain manipulating the spinal cord and muscles during unconsciousness, enabling inhumanly fast and precise movements.</p>
+
+<p><strong>Background:</strong></p>
+<p>A flow state is a focused conscious state of mind, whereas Ultra Instinct is a full unconscious state where the dream controls muscle movement. It causes a surge of electric energy flowing through the body, eyes turning black, and autonomous physical actions.</p>
+
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>UI is controlled via the spinal cord and muscle memory.</li>
+<li>It is twice as fast as normal unconscious movement.</li>
+<li>Dreams play a critical role in managing UI.</li>
+<li>The surge felt is electrical, powering the movement.</li>
+</ul>
+
+<p><strong>Story Example:</strong></p>
+<p>You dreamed of a bee stinging your hand. Upon waking, you felt an electric surge, pain in your hand, and saw the bee’s sting on the floor — demonstrating UI's control even while unconscious.</p>
+`,
+
+    "Flow State vs Ultra Instinct": `
+<h2>Flow State vs Ultra Instinct</h2>
+<p><strong>Flow state</strong> is a conscious state where your mind is focused on one task, and muscle memory helps control the body. It is a highly efficient but conscious action.</p>
+
+<p><strong>Ultra Instinct</strong>, by contrast, is an unconscious flow state controlled entirely by instinct, where your body moves without conscious thought.</p>
+
+<p><strong>Key Differences:</strong></p>
+<ul>
+<li>Flow State is conscious, UI is unconscious.</li>
+<li>Flow State involves the mind; UI bypasses the mind for direct muscle control.</li>
+<li>UI uses the spinal cord and dream control mechanisms.</li>
+</ul>`,
+
+    "Sleepwalking as Ultra Instinct": `
+<h2>Sleepwalking as Ultra Instinct</h2>
+<p>Sleepwalking is a rare unconscious state where the body performs complex actions without conscious awareness, much like Ultra Instinct.</p>
+
+<p>It is considered a form of instinct-driven movement during unconsciousness, similar to how UI functions.</p>`,
+
+    "Mab'z Number (m^x) & Symbol": `
+<h2>Mab'z Number (m^x) & Symbol</h2>
+<p><strong>Definition:</strong></p>
+<p>In Raven John B. Mabao's mathematical system, <code>m^x</code> (read as "m raised to x") is a special constant invented as part of advanced number theory, combining geometry and exponential properties.</p>
+
+<p><strong>Value:</strong></p>
+<pre>4.1382363393266008879601231484534881068471952330507201292850965
+0920236157931242642219309488293542947647130341906122780667207
+6098585283619144682883579253011304242870040344333413775514852
+1998742351682311300421716687043920028168295181370864974966900
+5660347717112822622982929709082308150817710564303364530984710
+5745039565957803206076959452699699624026915535662804572880597
+0722771321723636464988801756075168860975983832386403521299943
+092476917320</pre>
+
+<p><strong>Properties:</strong></p>
+<ul>
+<li>Infinite non-repeating decimals.</li>
+<li>Value lies between <code>√17</code> and <code>√18</code>.</li>
+<li>Used as a universal constant/scalar in Raven’s theories.</li>
+</ul>
+
+<p><strong>Equation Example:</strong></p>
+<p>Mabz Equation (simplified):</p>
+<pre>(Polygon's Sides × ent) / (radius × V) × 180° = ...</pre>`,
+
+    "True Mab'z Number (TMN) & Advanced Theories": `
+<h2>True Mab'z Number (TMN) & Advanced Theories</h2>
+<p>The <strong>True Mab'z Number</strong> (TMN) is a large combinatorial and hyper-exponential number developed by Raven John B. Mabao.</p>
+
+<p>It surpasses known large numbers like Graham's number and TREE(3) in size and complexity.</p>
+
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Uses recursive factorials and combinatorial mathematics.</li>
+<li>Integrates hyper-tetration and advanced exponential layers.</li>
+<li>Represents a mathematical model of infinite growth and multiverse counting.</li>
+</ul>
+
+<p>TMN is still under exploration but is a cornerstone of Raven’s mathematical framework.</p>`,
+
+    "Infinity Theory": `
+<h2>Infinity Theory</h2>
+<p>Infinity Theory explores the nature of infinite sets and limitless mathematical growth.</p>
+
+<p>It describes how certain constructs, such as recursive factorial multiverses, expand infinitely beyond human comprehension.</p>
+
+<p>The theory ties in with Raven’s work on TMN and Mab'z Number to explain boundless abstract mathematical spaces.</p>`
+  };
+
+  const theoryList = document.getElementById("theoryList");
+  const detailView = document.getElementById("detailView");
+  const detailContent = document.getElementById("detailContent");
+  const closeBtn = document.getElementById("closeBtn");
+  const searchBar = document.getElementById("searchBar");
+
+  // Show theory detail
+  theoryList.querySelectorAll(".theory-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const title = card.querySelector(".theory-title").innerText;
+      detailContent.innerHTML = theories[title] || "<p>No detailed content available.</p>";
+      detailView.style.display = "block";
+      window.scrollTo(0,0);
+    });
+  });
+
+  // Close detail view
+  closeBtn.addEventListener("click", () => {
+    detailView.style.display = "none";
+  });
+
+  // Search filter
+  searchBar.addEventListener("input", (e) => {
+    const query = e.target.value.toLowerCase();
+    theoryList.querySelectorAll(".theory-card").forEach(card => {
+      const keywords = card.getAttribute("data-keywords");
+      const title = card.querySelector(".theory-title").innerText.toLowerCase();
+      if (title.includes(query) || keywords.includes(query)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+</script>
+</body>
+</html>
